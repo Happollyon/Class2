@@ -1,0 +1,19 @@
+<!doctye>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+
+    <title>BookAudit</title>
+
+
+</head>
+<body>
+<nav>
+   <div><a href="/login">login</a></div> <div> <a href="/register">register</a></div> <div><a href="/logout">logout</a></div>
+
+</nav>
+{%block body%}
+
+{%endblock%}
+</body>
+</html>

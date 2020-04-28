@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+
+{%block body%}
+
+<h1>search</h1>
+<form action="/search" method="POST">
+    <input type="text" name="string" placeholder="search">
+    <input type="submit" placeholder="register">
+</form>
+<br>
+<br>
+<h2>Results for matching isbn</h2>
+{%for isbn_result in isbn_result%}
+<a href="#">{{isbn_result.title}}</a>
+{%endfor%}
+
+<h2>Results for matching title</h2>
+{%for title_result in title_result%}
+<a href="{{title_result.title}}">{{title_result.title}}</a><br>
+{%endfor%}
+
+<h2>Results for matching author</h2>
+{%for author_result in author_result%}
+<a href="#">{{author_result.title}}</a><br>
+{%endfor%}
+
+{%endblock%}

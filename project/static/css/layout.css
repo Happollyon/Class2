@@ -1,0 +1,19 @@
+
+nav{
+    background: white;
+    width:100vw;
+    height:10vh;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+a:link{
+    text-decoration: none;
+    text-underline: none;
+}
+nav>div{
+    width: 10vw;
+}
+input{
+    width: 20vw;
+}
